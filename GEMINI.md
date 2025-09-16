@@ -129,9 +129,8 @@ The AI's workflow is iterative, transparent, and responsive to user input.
 2. **檔案結構**
    - `src/components` → 共用元件目錄，包含可重複使用Vue元件
    - `src/components/common` → 通用元件 
-   - `src/views` → 頁面
-   - `src/pages` → 狀態管理 (Pinia)
-   - `src/composables` → 共用邏輯
+   - `src/pages` → 頁面
+   - `src/utils/js` → 共用邏輯
 3. **副檔名解析**
    - 支援的副檔名：
      ```
@@ -174,4 +173,10 @@ The AI's workflow is iterative, transparent, and responsive to user input.
    1. **專案`<template>`色彩由 Vuetify theme 管理，禁止硬編碼顏色。
    2. **統一於 vite.config.js 內設定主題色。
 5. **全域 SCSS 架構與引用順序**
-  
+  1. **全域樣式入口：`src/styles/scss/style.scss` 
+  2. **全域色彩：`src/styles/scss/_variables.scss`
+  範例：
+  ``` ._variables.scss
+    $變數名稱(英文命名): HEX色碼 !default;
+  ```
+  3. **頁面樣式：`src/styles/scss/page.scss`
