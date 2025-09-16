@@ -131,6 +131,8 @@ The AI's workflow is iterative, transparent, and responsive to user input.
    - `src/components/common` → 通用元件 
    - `src/pages` → 頁面
    - `src/utils/js` → 共用邏輯
+   - `src\utils\i18n\locales` → 全域Text編輯
+   - `public/json` → 靜態json
 3. **副檔名解析**
    - 支援的副檔名：
      ```
@@ -180,3 +182,28 @@ The AI's workflow is iterative, transparent, and responsive to user input.
     $變數名稱(英文命名): HEX色碼 !default;
   ```
   3. **頁面樣式：`src/styles/scss/page.scss`
+## 4. 全域Text編輯規範(變數英文命名)
+1. **全域Text入口：`src\utils\i18n\locales\zh-TW.json`
+1. 參數設定 範例
+```
+"btn": {
+        "ConnectionStatusOk": "連線成功"
+      }
+or
+"label": {
+        "type":"類型",
+        "UserName":"使用者名稱"
+}
+```
+## 5. TestData
+1. 測試資料檔案入口：`public/json`
+2. 命名規則：資料用途命名 
+範例檔名 UserData.json ```
+  {
+  "UserData": {
+    "Name": "王小明",
+    "age": "14",
+    "sex": "man"
+  }
+}
+```
