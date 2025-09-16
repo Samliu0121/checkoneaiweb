@@ -1,20 +1,17 @@
-# Blueprint
+# 藍圖
 
-## Overview
+## 專案概述
 
-This is a Vue.js project using the Composition API, TypeScript, and Vite. It's designed for a modern, performant, and maintainable web application.
+這是一個使用 Composition API、JavaScript 和 Vite 的 Vue.js 專案。旨在打造一個現代化、高效能且易於維護的 Web 應用程式。
 
-## Implemented Features
+## 已實作功能
 
-* **Vue.js Framework:** The project is built on the Vue.js framework.
-* **Vite Tooling:** Vite is used for development and building.
-* **Composition API:** The code is written using the Composition API (`<script setup>`).
-* **TypeScript:** The project uses TypeScript for type safety.
-* **Vuetify:** The project uses Vuetify as a UI library.
+* **Vue.js 框架:** 專案基於 Vue.js 框架建構。
+* **Vite 工具:** 使用 Vite 進行開發與建置。
+* **Composition API:** 使用 Composition API (`<script setup>`) 編寫程式碼。
+* **JavaScript:** 使用 JavaScript 確保型別安全。
+* **Vuetify:** 使用 Vuetify 作為 UI 函式庫。
 
-## Current Plan: Remove Unused Packages
+## 當前狀態
 
-1.  **Stop Development Server:** The running development server will be stopped.
-2.  **Uninstall Packages:** The `swiper`, `jspdf`, and `html2canvas` packages will be uninstalled.
-3.  **Update `package.json`:** The `package.json` file will be updated to reflect the removal of the packages.
-4.  **Restart Development Server:** The development server will be restarted to ensure the application still runs correctly.
+目前為初版。等待下一步開發指示。
