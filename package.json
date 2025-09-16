@@ -12,7 +12,7 @@
     "@mdi/font": "^7.4.47",
     "@popperjs/core": "^2.11.8",
     "@studio-freight/lenis": "^1.0.42",
-    "axios": "^1.7.9",
+    "axios": "^1.12.2",
     "date-fns": "^2.30.0",
     "gsap": "^3.13.0",
     "roboto-fontface": "^0.10.0",

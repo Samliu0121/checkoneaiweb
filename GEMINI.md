@@ -111,6 +111,8 @@ The AI's workflow is iterative, transparent, and responsive to user input.
 # 專案自訂規範 (Custom Rules)
 以下規範為本專案規範，中文撰寫，與上方英文基準規範互補：
 
+# **使用中文編譯biueprint.md!
+# **需求條件位於資料夾內README.md
 ## 1. Vite 設定規範
 1. **路徑別名**
    - 已在 `vite.config.js` 中設定：
@@ -207,3 +209,4 @@ or
   }
 }
 ```
+
