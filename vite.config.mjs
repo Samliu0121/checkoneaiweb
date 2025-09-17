@@ -65,8 +65,8 @@ export default defineConfig({
   },
   css: {
     preprocessorOptions: {
-      sass: {
-        api: 'modern-compiler',
+      scss: {
+        additionalData: `@import "@/styles/scss/_variables.scss";`,
       },
     },
   },

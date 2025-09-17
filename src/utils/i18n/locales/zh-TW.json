@@ -1,17 +1,23 @@
 {
   "btn": {
-    "addToCart": "加入購物車",
-    "close": "關閉"
+    "addToCart": "加入",
+    "checkout": "前往結帳",
+    "backToDashboard": "返回儀表板",
+    "reservations": "訂位總覽",
+    "backToHome": "回到首頁"
   },
   "label": {
-    "coffee": "咖啡",
-    "desserts": "甜點"
+    "classification": "分類",
+    "myCart": "我的購物車",
+    "emptyCart": "購物車是空的",
+    "subtotal": "小計",
+    "total": "總計",
+    "promo": "全品項85折優惠實施中！",
+    "promo2": "滿500元再送炸物拼盤一份！"
   },
   "page": {
     "index": {
-      "title": "咖啡廳",
-      "cart": "購物車",
-      "total": "總計"
+      "title": "向天泓咖啡廳"
     }
   }
 }

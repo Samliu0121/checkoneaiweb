@@ -1,17 +1,39 @@
-# 藍圖
+# 專案 Blueprint
 
-## 專案概述
+## 任務：建構點餐系統 UI
 
-這是一個使用 Composition API、JavaScript 和 Vite 的 Vue.js 專案。旨在打造一個現代化、高效能且易於維護的 Web 應用程式。
+- **進度**：已完成
+- **最後更新**：2024-07-29 14:55 (UTC+8)
 
-## 已實作功能
+### 執行步驟回顧
 
-* **Vue.js 框架:** 專案基於 Vue.js 框架建構。
-* **Vite 工具:** 使用 Vite 進行開發與建置。
-* **Composition API:** 使用 Composition API (`<script setup>`) 編寫程式碼。
-* **JavaScript:** 使用 JavaScript 確保型別安全。
-* **Vuetify:** 使用 Vuetify 作為 UI 函式庫。
+1.  **[完成]** 設定 Vuetify 主題色 (`src/plugins/vuetify.js`)
+2.  **[完成]** 建立菜單資料 (`public/json/menu.json`)
+3.  **[完成]** 新增/修改全域文字 (`src/utils/i18n/locales/zh-TW.json`)
+4.  **[完成]** 修改導覽列 (`src/layouts/default/navbar.vue`)
+5.  **[完成]** 建立分類側邊欄元件 (`src/components/CategorySidebar.vue`)
+6.  **[完成]** 建立商品卡片元件 (`src/components/ProductCard.vue`)
+7.  **[完成]** 建立購物車元件 (`src/components/ShoppingCart.vue`)
+8.  **[完成]** 整合元件至點餐頁面 (`src/pages/index.vue`)
+9.  **[完成]** 更新所有相關 `README.md` 檔案
 
-## 當前狀態
+### 產出檔案
 
-目前為初版。等待下一步開發指示。
+- `public/json/menu.json`
+- `src/components/CategorySidebar.vue`
+- `src/components/ProductCard.vue`
+- `src/components/ShoppingCart.vue`
+
+### 修改檔案
+
+- `src/plugins/vuetify.js`
+- `src/utils/i18n/locales/zh-TW.json`
+- `src/layouts/default/navbar.vue`
+- `src/pages/index.vue`
+- `src/components/README.md`
+- `src/layouts/default/README.md`
+- `src/pages/README.md`
+- `src/plugins/README.md`
+- `public/json/README.md`
+- `src/utils/i18n/locales/README.md`
+- `blueprint.md`
