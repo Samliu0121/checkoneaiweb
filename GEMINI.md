@@ -112,7 +112,8 @@ The AI's workflow is iterative, transparent, and responsive to user input.
 以下規範為本專案規範，中文撰寫，與上方英文基準規範互補：
 
 # **使用中文編譯biueprint.md!
-# **需求條件位於資料夾內README.md
+# **專案各資料夾內README.md,需紀錄此資料夾中,修改檔案編碼目的,原因,關聯檔案
+# **每次修改編碼皆須執行驗證,編碼錯誤及時修改並且記錄
 ## 1. Vite 設定規範
 1. **路徑別名**
    - 已在 `vite.config.js` 中設定：
