@@ -6,7 +6,7 @@
         
 2. **頁面
     1. **首頁**
-        -- 樣式參考圖片入口:/public/images/ ReferencePicture/index.png
+        -- 樣式參考圖片入口:/public/images/ReferencePicture/index.png
         -- 導覽列修改檔案入口:@/layouts/default/navbar.vue
         -- 購物車、菜單樣式,皆使用參考圖片範例
         **功能
