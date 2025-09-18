@@ -1,7 +1,17 @@
 {
-    "zh-TW": {
-      "sys": {
-        "ConnectionStatusOk": "連線成功"
-      }
+  "btn": {
+    "addToCart": "加入購物車",
+    "close": "關閉"
+  },
+  "label": {
+    "coffee": "咖啡",
+    "desserts": "甜點"
+  },
+  "page": {
+    "index": {
+      "title": "咖啡廳",
+      "cart": "購物車",
+      "total": "總計"
     }
   }
+}
