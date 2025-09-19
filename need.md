@@ -21,7 +21,7 @@
                 2. 甜點:布朗尼,甜甜圈,鬆餅
         -- 購物車狀態Card:計算價格,提供金額總計,預覽選擇中餐點,餐點刪除,數量修改
 --- 
-## 畫面描述 ---
+## **畫面描述** 
 【畫面結構與 Vue 前端建構說明（向天泓咖啡廳—菜單＋購物車頁）】
 版本：v1.0
 語言/框架：Vue 3（<script setup>）、Pinia（狀態）、Vue Router（頁面切換）、Vite（開發建置）
@@ -38,7 +38,7 @@ UI 工具：可用原生 CSS / Tailwind / Vuetify（下文以中立命名與 cla
   - ProductArea：商品卡片網格（中間主欄）
   - RightAside：購物車（右側窄欄）
 
-建議使用 CSS Grid 或 Flex：
+使用 CSS Grid 或 Flex：
 - Grid 方案：
   .page { display: grid; grid-template-rows: auto 1fr; height: 100vh; }
   .main { display: grid; grid-template-columns: 220px 1fr 360px; gap: 16px; }
@@ -103,4 +103,4 @@ UI 工具：可用原生 CSS / Tailwind / Vuetify（下文以中立命名與 cla
 - 中間 3xN 商品卡（每張含圖、標題、副標、價格、加入）
 - 右側購物車（空狀態、活動提示、小計/總計、前往結帳）
 ---
-## **讀取GEMINI.md文件，強制行動協議、專案規範絕對優先級，須列出於聊天室(範例需返回GEMINI.md確認)，此後所有更新都需以此規範進行。
+ **讀取GEMINI.md文件，強制行動協議、專案規範絕對優先級，須列出於聊天室(範例需返回GEMINI.md確認)，此後所有更新都需以此規範進行。

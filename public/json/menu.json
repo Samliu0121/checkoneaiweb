@@ -1,0 +1,79 @@
+
+{
+  "categories": [
+    { "id": "hotpot", "name": "特色風味小火鍋" },
+    { "id": "meal", "name": "特色風味簡餐" },
+    { "id": "coffee", "name": "單品咖啡" },
+    { "id": "espresso", "name": "義式咖啡" },
+    { "id": "tea", "name": "茶" },
+    { "id": "non-caffeine", "name": "無咖啡因飲品" },
+    { "id": "dessert", "name": "甜點" },
+    { "id": "fried", "name": "炸物" }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "categoryId": "hotpot",
+      "name": "蕃茄牛奶鍋(雞肉)",
+      "subname": "特色風味小火鍋",
+      "price": 400,
+      "image": "/images/menu/Americano.png"
+    },
+    {
+      "id": 2,
+      "categoryId": "hotpot",
+      "name": "泰式酸辣鍋(雞肉)",
+      "subname": "特色風味小火鍋",
+      "price": 380,
+      "image": "/images/menu/latte.png"
+    },
+    {
+      "id": 3,
+      "categoryId": "hotpot",
+      "name": "賽夏馬告鍋(雞肉)",
+      "subname": "特色風味小火鍋",
+      "price": 380,
+      "image": "/images/menu/Americano.png"
+    },
+    {
+      "id": 4,
+      "categoryId": "hotpot",
+      "name": "賽夏馬告鍋(素)",
+      "subname": "特色風味小火鍋",
+      "price": 320,
+      "image": "/images/menu/latte.png"
+    },
+    {
+      "id": 5,
+      "categoryId": "hotpot",
+      "name": "羊奶樹根鍋(雞肉)",
+      "subname": "特色風味小火鍋",
+      "price": 380,
+      "image": "/images/menu/Americano.png"
+    },
+    {
+      "id": 6,
+      "categoryId": "hotpot",
+      "name": "羊奶樹根鍋(素)",
+      "subname": "特色風味小火鍋",
+      "price": 320,
+      "image": "/images/menu/latte.png"
+    },
+    {
+      "id": 7,
+      "categoryId": "hotpot",
+      "name": "十全養生鍋(雞肉)",
+      "subname": "特色風味小火鍋",
+      "price": 380,
+      "image": "/images/menu/Americano.png"
+    },
+    {
+      "id": 8,
+      "categoryId": "hotpot",
+      "name": "十全養生鍋(素)",
+      "subname": "特色風味小火鍋",
+      "price": 320,
+      "image": "/images/menu/latte.png"
+    }
+  ]
+}

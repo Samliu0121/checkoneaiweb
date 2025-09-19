@@ -1,17 +1,11 @@
-# 藍圖
-
-## 專案概述
-
-這是一個使用 Composition API、JavaScript 和 Vite 的 Vue.js 專案。旨在打造一個現代化、高效能且易於維護的 Web 應用程式。
-
-## 已實作功能
-
-* **Vue.js 框架:** 專案基於 Vue.js 框架建構。
-* **Vite 工具:** 使用 Vite 進行開發與建置。
-* **Composition API:** 使用 Composition API (`<script setup>`) 編寫程式碼。
-* **JavaScript:** 使用 JavaScript 確保型別安全。
-* **Vuetify:** 使用 Vuetify 作為 UI 函式庫。
-
-## 當前狀態
-
-目前為初版。等待下一步開發指示。
+1. **目標**: 根據 `need.md` 的描述，完成咖啡廳點餐系統的前端畫面，包含菜單、購物車、分類等功能。
+2. **規範查核**: `GEMINI.md`、`need.md`
+3. **[編譯 `blueprint.md`]:[blueprint.md]-[完成]**
+4. **[設定主題顏色]:[vite.config.mjs]-[完成]**
+5. **[建立資料結構]:[public/json/menu.json]-[完成]**
+6. **[修改導覽列]:[@/layouts/default/navbar.vue]-[完成]**德
+7. **[建立主頁面結構]:[@/pages/index.vue]-[完成]**
+8. **[建立分類側邊欄]:[@/pages/index.vue]-[完成]**
+9. **[建立商品卡片]:[@/pages/index.vue]-[完成]**
+10. **[建立購物車側邊欄]:[@/pages/index.vue]-[完成]**
+11. **[實作互動邏輯]:[@/pages/index.vue]-[完成]**
