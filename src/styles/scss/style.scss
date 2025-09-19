@@ -1,6 +1,6 @@
 @use 'vuetify' with ($color-pack: '');
-@import "variables";
-@import "page";
+@forward "variables";
+@use "page";
 
-// 此處只可新增@import "page";
+// 此處只可新增@use "page";
 // vuetify編輯專案color key
