@@ -6,6 +6,7 @@
 ## biueprint.md 任務列表格式
   1. **目標**: [簡述本次任務要達成的最終目標]
   2. **規範查核**: [列出與本次任務相關的 GEMINI.md中的關鍵規範]
+  4. **確認need.md:[GEMINI畫面分析]
   3. **[列出本次行動名稱]:[檔案名稱]-[未完成/完成]
 
 ## **核心指令:專案規範絕對優先級 (Core Directive Absolute Priority of Project Rules)**
