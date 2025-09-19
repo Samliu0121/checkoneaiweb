@@ -1,17 +1,16 @@
 {
-  "btn": {
-    "addToCart": "加入購物車",
-    "close": "關閉"
-  },
-  "label": {
-    "coffee": "咖啡",
-    "desserts": "甜點"
-  },
   "page": {
     "index": {
-      "title": "咖啡廳",
-      "cart": "購物車",
-      "total": "總計"
+      "title": "咖啡廳點餐系統"
     }
+  },
+  "btn": {
+    "addToCart": "加入購物車",
+    "checkout": "結帳"
+  },
+  "shoppingCart": {
+    "title": "購物車",
+    "empty": "你的購物車是空的。",
+    "total": "總計"
   }
 }

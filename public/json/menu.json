@@ -1,0 +1,40 @@
+{
+  "menuItems": [
+    {
+      "id": 1,
+      "name": "濃縮咖啡",
+      "price": 80,
+      "image": "/images/menu/espresso.jpg"
+    },
+    {
+      "id": 2,
+      "name": "拿鐵",
+      "price": 120,
+      "image": "/images/menu/latte.jpg"
+    },
+    {
+      "id": 3,
+      "name": "卡布奇諾",
+      "price": 110,
+      "image": "/images/menu/cappuccino.jpg"
+    },
+    {
+      "id": 4,
+      "name": "摩卡",
+      "price": 130,
+      "image": "/images/menu/mocha.jpg"
+    },
+    {
+      "id": 5,
+      "name": "美式咖啡",
+      "price": 90,
+      "image": "/images/menu/americano.jpg"
+    },
+    {
+      "id": 6,
+      "name": "焦糖瑪奇朵",
+      "price": 140,
+      "image": "/images/menu/caramel-macchiato.jpg"
+    }
+  ]
+}

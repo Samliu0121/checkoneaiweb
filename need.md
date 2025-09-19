@@ -71,10 +71,68 @@
 4. **[GEMINI補充]
     --
 
-## **[GEMINI畫面分析]** 
+## **[GEMINI畫面分析]**
 版本：v[1.0]
 語言/框架：Vue 3（<script setup>）、Pinia（狀態）、Vue Router（頁面切換）、Vite（開發建置）
-UI 工具：可用原生 CSS / Tailwind / Vuetify
+UI 工具：Vuetify
+---
+專案:[checkoneaiweb]
+1. **專案主色調**:
+    - $primary: #b7181f
+    - $secondary: #333
+    - $background: #f5f5f5
+    -- [編輯SCSS]:_variables.scss-[src/styles/scss/_variables.scss]
+2. **[page][首頁]
+    -- [檔案名稱]: index.vue
+    -- [page檔案路徑]: src/pages/index.vue
+    -- [功能]: 咖啡廳點餐主畫面，包含頂部導航、菜單展示、以及右側購物車區域。
+    -- [布局結構]:
+        -   **頂部 (Header)**: 使用 `v-app-bar`，包含 Logo 和導航按鈕。
+        -   **主要內容 (Main Content)**:
+            -   左側為**菜單區域 (`MenuSection.vue`)**：使用 `v-row` 和 `v-col` 展示多個 `MenuItemCard.vue`。
+            -   右側為**購物車區域 (`ShoppingCart.vue`)**：固定寬度，顯示已點選的商品、總金額與結帳按鈕。
+    -- [響應式設計]:
+        -   **桌面 (md, lg)**: 左側菜單區佔 8/12，右側購物車佔 4/12。
+        -   **平板/手機 (sm, xs)**: 購物車區域移至頁面下方或以 Dialog/BottomSheet 形式呈現，菜單區佔滿 12/12。
+    -- [顏色分析]:
+        -   `#b7181f` ($primary): 主要按鈕 (如「加入購物車」)、標題、重點提示。
+        -   `#333` ($secondary): 主要文字內容。
+        -   `#f5f5f5` ($background): 頁面背景色。
+        -   `#ffffff` ($white): 卡片背景色。
+    -- [補充]: 頁面整體應使用 `v-container` 包覆以維持一致的邊距。
+3. **[components][業務元件]
+    -- [元件名稱]: MenuItemCard.vue
+    -- [元件檔案路徑]: src/components/MenuItemCard.vue
+    -- [功能]: 以卡片形式獨立展示一個菜單項目，包含圖片、名稱、價格和「加入購物車」按鈕。
+    -- [Props]: `item: { name: String, price: Number, image: String }`
+    -- [Events]: `@addToCart(item)`
+    -- [布局結構]:
+        -   使用 `v-card` 作為根元素。
+        -   `v-img` 顯示商品圖片。
+        -   `v-card-title` 顯示商品名稱。
+        -   `v-card-subtitle` 顯示價格。
+        -   `v-card-actions` 包含一個 `v-btn`。
+    -- [顏色分析]:
+        -   `#ffffff` ($white): 卡片背景。
+        -   `#b7181f` ($primary): 「加入購物車」按鈕背景色。
+    -- [補充]: 卡片應有固定長寬比，確保排版整齊。
+
+    -- [元件名稱]: ShoppingCart.vue
+    -- [元件檔案路徑]: src/components/ShoppingCart.vue
+    -- [功能]: 管理購物車狀態，顯示所有已加入的商品、計算總金額，並提供結帳入口。
+    -- [Props]: 無 (內部狀態管理，可考慮使用 Pinia Store)。
+    -- [Events]: 無 (內部處理結帳邏輯)。
+    -- [布局結構]:
+        -   使用 `v-list` 顯示購物車項目 (`ShoppingCartItem.vue`)。
+        -   底部固定一個區域顯示總金額和 `v-btn` 結帳按鈕。
+    -- [顏色分析]:
+        -   `#f5f5f5` ($background): 購物車區塊背景。
+        -   `#b7181f` ($primary): 結帳按鈕。
+    -- [補充]: 購物車內的每個項目可以考慮再拆分成 `ShoppingCartItem.vue` 元件。
+4. **[GEMINI補充]**
+    -- 根據 GEMINI.md 規範，所有頁面和元件都應使用 `<style scoped>` 以避免樣式污染。
+    -- 建議建立一個 `useCartStore` (Pinia) 來集中管理購物車的狀態，方便 `MenuItemCard.vue` 和 `ShoppingCart.vue` 共享數據。
+    -- 全域文字 (如 "加入購物車", "結帳", "總金額") 應統一在 `src/utils/i18n/locales/zh-TW.json` 中定義。
 ---
 
 ---
