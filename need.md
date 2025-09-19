@@ -21,6 +21,53 @@
                 2. 甜點:布朗尼,甜甜圈,鬆餅
         -- 購物車狀態Card:計算價格,提供金額總計,預覽選擇中餐點,餐點刪除,數量修改
 --- 
+
+## **設計圖**
+**首頁[image](https://github.com/Samliu0121/checkoneaiweb/blob/main/public/images/%20ReferencePicture/index.png?raw=true)**
+
+
+## **元件化分析**
+## **如有提供設計圖,請以下規範分析將該區塊元件化**
+1.  **識別重複出現的 UI 模式 (Repetitive Patterns):**
+    *   **分析**: 找出畫面中結構相同、但內容不同的所有元素。這些是元件化的首要目標。
+    *   **範例**: 商品列表中的每一張「商品卡片」(`ProductCard.vue`)、購物車中的每一個「商品項目」(`CartItem.vue`)。
+    *   **指令**: "請將[重複的區塊描述]元件化為 `[ComponentName].vue`。"
+
+2.  **隔離功能獨立的區塊 (Functional Blocks):**
+    *   **分析**: 尋找管理著特定、獨立功能的區塊。這些區塊通常有自己的內部狀態和複雜邏輯。
+    *   **範例**: 右側的「我的購物車」(`ShoppingCart.vue`)，它獨立管理購物車內容、計算總價等。
+    *   **指令**: "請將[功能區塊描述]建立為一個獨立的元件 `[ComponentName].vue`。"
+
+3.  **劃分元件職責 (Props & Events):**
+    *   **分析**: 為每個待建立的元件定義其職責邊界。
+        *   **Props (屬性)**: 它需要接收哪些資料才能正確顯示？(例如，`ProductCard` 需要一個 `product` 物件)。
+        *   **Events (事件)**: 它需要對外發出哪些通知？(例如，`ProductCard` 在點擊按鈕後，需要發出 `@addToCart` 事件)。
+    *   **指令**: "建立 `ProductCard.vue`，它需要接收 `product` 作為 prop，並在點擊時發出 `addToCart` 事件。"
+
+4.  **命名與定位 (Naming & Placement):**
+    *   **分析**: 根據 `GEMINI.md` 的規範，為元件命名並決定其存放位置。
+        *   **命名**: 必須是多字、PascalCase 格式，例如 `UserCard.vue`、`ShoppingCart.vue`。
+        *   **定位**:
+            *   可於多個頁面重複使用的業務元件，應放置於 `src/components/`。
+            *   極度通用、與業務邏輯無關的基礎元件（如自定義按鈕、對話框），應放置於 `src/components/common/`。
+    *   **指令**: "建立 `ProductCard.vue` 並將其放置在 `src/components/` 目錄下。"
+
+## **如無提供設計圖,請以下文字描述進行元件化**
+1.  **從需求文字中提取名詞 (Extract Nouns from Requirements):**
+    *   **分析**: 仔細閱讀需求文檔，將描述到的所有具體「事物」或「區塊」當作潛在的元件。
+    *   **範例**: 如果需求提到「顯示一個**商品列表**，每個**商品**都應有**加入按鈕**」，那麼「商品列表」、「商品」、「加入按鈕」都是元件的候選者。
+    *   **指令**: "根據需求，我識別出以下潛在元件：`ProductList`、`ProductItem`、`AddToCartButton`。"
+
+2.  **按功能組織和分組 (Group by Functionality):**
+    *   **分析**: 將提取出的名詞按照其在系統中的功能進行分組。一個複雜的功能區塊可能由數個小元件組成。
+    *   **範例**: 「購物車」功能可能包含「購物車列表」(`CartList`)、「購物車項目」(`CartItem`) 和「結帳按鈕」(`CheckoutButton`)。
+    *   **指令**: "我建議將購物車功能拆分為 `CartList`、`CartItem` 和 `CheckoutButton` 三個元件。"
+
+3.  **定義元件的職責與層級 (Define Responsibilities and Hierarchy):**
+    *   **分析**: 思考元件之間的父子關係。哪個元件管理狀態？哪個元件僅負責顯示？
+    *   **範例**: `ProductList` (父元件) 應該負責獲取商品資料，然後透過 `v-for` 將單個 `product` 資料傳遞給多個 `ProductItem` (子元件)。
+    *   **指令**: "`ProductList` 將作為父元件，獲取資料並遍歷 `ProductItem` 子元件，將 `product` 資料作為 prop 傳入。"
+
 ## **畫面描述** 
 【畫面結構與 Vue 前端建構說明（向天泓咖啡廳—菜單＋購物車頁）】
 版本：v1.0
