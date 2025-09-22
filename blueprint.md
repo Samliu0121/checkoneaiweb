@@ -1,17 +1,19 @@
-# 藍圖
-
-## 專案概述
-
-這是一個使用 Composition API、JavaScript 和 Vite 的 Vue.js 專案。旨在打造一個現代化、高效能且易於維護的 Web 應用程式。
-
-## 已實作功能
-
-* **Vue.js 框架:** 專案基於 Vue.js 框架建構。
-* **Vite 工具:** 使用 Vite 進行開發與建置。
-* **Composition API:** 使用 Composition API (`<script setup>`) 編寫程式碼。
-* **JavaScript:** 使用 JavaScript 確保型別安全。
-* **Vuetify:** 使用 Vuetify 作為 UI 函式庫。
-
-## 當前狀態
-
-目前為初版。等待下一步開發指示。
+## biueprint.md 任務列表格式
+  1. **目標**: 根據設計圖，使用 Vuetify 和 Vue 3 建立「向天泓咖啡廳」的線上點餐介面，包含分類、商品列表及購物車功能。
+  2. **規範查核**:
+      - **核心指令**: 專案規範絕對優先級, 強制行動協議 (任務簽入/簽出)
+      - **檔案結構**: `src/pages`, `src/components`, `src/components/common`, `public/json`
+      - **命名規範**: Vue 元件多字名稱 (e.g., `ProductCard.vue`)
+      - **UI/RWD**: Vuetify Grid System (`v-container`, `v-row`, `v-col`), 統一使用 Vuetify 元件, 禁止硬編碼顏色
+      - **全域 SCSS**: `src/styles/scss/_variables.scss`
+      - **全域 Text**: `src/utils/i18n/locales/zh-TW.json`
+      - **TestData**: `public/json/`
+  3. **確認need.md:[GEMINI畫面分析]**: 已完成分析並生成 `GEMINI畫面分析.md`。
+  4. **任務列表**:
+      - **[設定主題色與全域樣式]**: `src/styles/scss/_variables.scss` - 完成
+      - **[建立資料來源]**: `public/json/menu.json` - 完成
+      - **[建立狀態管理]**: `src/stores/cartStore.js` - 完成
+      - **[建立左側分類元件]**: `src/components/CategoryMenu.vue` - 完成
+      - **[建立商品卡片元件]**: `src/components/ProductCard.vue` - 完成
+      - **[建立右側購物車元件]**: `src/components/ShoppingCart.vue` - 完成
+      - **[整合首頁畫面]**: `src/pages/index.vue` - 完成
