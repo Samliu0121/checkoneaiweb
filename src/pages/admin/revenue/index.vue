@@ -1,14 +1,10 @@
 <template>
   <v-container fluid>
-    <v-row>
-      <v-col cols="12">
-        <h1 class="text-h4">{{ t('page.admin.nav.revenue') }}</h1>
-      </v-col>
-    </v-row>
+    <h1 class="text-h4">營收分析</h1>
+    <p>這裡是營收分析頁面。</p>
   </v-container>
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n';
-const { t } = useI18n();
+//
 </script>

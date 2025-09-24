@@ -11,35 +11,17 @@
 - **相依套件/Plugin**：`vue-router`, `vuetify`。
 
 ## ④ 變更紀錄
-- [2024-07-29 17:10 (UTC+8)]
-  **動作**：修改 `index.vue`
-  **原因**：在首頁加入點餐、訂位和後台管理的入口。
-  **影響檔案**：`src/pages/index.vue`
-  **驗證**：尚未驗證。
+- [2024-07-30 10:00 (UTC+8)]
+  **動作**：刪除 `src/pages/admin`, `src/pages/dashboard`, `src/pages/index`, `src/pages/reservation`。
+  **原因**：清理舊的、不再使用的頁面。
+  **影響檔案**：`src/pages/admin`, `src/pages/dashboard`, `src/pages/index`, `src/pages/reservation`
+  **驗證**：終端機驗證成功。
 
-- [2024-07-29 17:05 (UTC+8)]
-  **動作**：新增 `reservation/index.vue`
-  **原因**：建立訂位頁面的基本佈局，包含一個訂位表單。
-  **影響檔案**：`src/pages/reservation/index.vue`
-  **驗證**：尚未驗證。
-
-- [2024-07-29 17:00 (UTC+8)]
-  **動作**：新增 `order/index.vue`
-  **原因**：建立點餐頁面的基本佈局，包含菜單和購物車。
-  **影響檔案**：`src/pages/order/index.vue`
-  **驗證**：尚未驗證。
-
-- [2024-07-29 16:40 (UTC+8)]
-  **動作**：新增 `admin/index.vue`
-  **原因**：建立後台管理頁面的基本佈局。
-  **影響檔案**：`src/pages/admin/index.vue`
-  **驗證**：尚未驗證。
-
-- [2024-07-29 16:30 (UTC+8)]
-  **動作**：新增 `admin/dashboard.vue`
-  **原因**：建立後台儀表板頁面。
-  **影響檔案**：`src/pages/admin/dashboard.vue`
-  **驗證**：尚未驗證。
+- [2024-07-30 10:10 (UTC+8)]
+  **動作**：新增 `src/pages/admin` and `src/pages/admin/products`。
+  **原因**：建立新的管理頁面和商品管理頁面。
+  **影響檔案**：`src/pages/admin/index.vue`, `src/pages/admin/products/index.vue`
+  **驗證**：終端機驗證成功。
 
 ## ⑤ 待辦
 - 無。

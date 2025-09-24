@@ -13,11 +13,16 @@
 - **使用的 Token / i18n key**：`page.admin.title`, `page.admin.nav.*`。
 
 ## ④ 變更紀錄
+- [2024-07-31 10:20 (UTC+8)]
+  **動作**: 修改 `AdminLayout.vue`
+  **原因**: 根據使用者需求，將後台管理介面左側導覽列的文字放大 10%。
+  **影響檔案**: `src/layouts/admin/AdminLayout.vue`
+  **驗證**: 終端機無錯誤。
 - [2024-07-29 16:15 (UTC+8)]
-  **動作**：新增 `AdminLayout.vue`
-  **原因**：建立後台管理介面的基礎版面，包含側邊導覽列和主要內容區域。
-  **影響檔案**：`src/layouts/admin/AdminLayout.vue`
-  **驗證**：已在 `/admin` 頁面確認版面配置能正確顯示。
+  **動作**: 新增 `AdminLayout.vue`
+  **原因**: 建立後台管理介面的基礎版面，包含側邊導覽列和主要內容區域。
+  **影響檔案**: `src/layouts/admin/AdminLayout.vue`
+  **驗證**: 已在 `/admin` 頁面確認版面配置能正確顯示。
 
 ## ⑤ 待辦
 - 無。

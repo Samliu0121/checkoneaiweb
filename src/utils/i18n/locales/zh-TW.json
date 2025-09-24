@@ -5,6 +5,9 @@
     },
     "admin": {
       "title": "向天泓咖啡廳",
+      "products": {
+        "title": "商品管理"
+      },
       "nav": {
         "dashboard": "店家儀表板",
         "orders": "即時訂單",

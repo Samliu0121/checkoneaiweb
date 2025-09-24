@@ -1,0 +1,99 @@
+
+[
+  {
+    "categoryName": "風味小火鍋",
+    "products": [
+      {
+        "Id": "hotpot001",
+        "Name": "經典原味鍋",
+        "EngName": "Classic Original Hot Pot",
+        "Price": 250,
+        "Photo": "/images/menu/hotpot001.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "特色風味簡餐",
+    "products": [
+      {
+        "Id": "meal001",
+        "Name": "紅燒牛腩飯",
+        "EngName": "Braised Beef Brisket with Rice",
+        "Price": 180,
+        "Photo": "/images/meal001.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "單品咖啡",
+    "products": [
+      {
+        "Id": "coffee001",
+        "Name": "手沖耶加雪菲",
+        "EngName": "Hand-drip Yirgacheffe",
+        "Price": 150,
+        "Photo": "/images/menu/coffee001.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "義式咖啡",
+    "products": [
+      {
+        "Id": "espresso001",
+        "Name": "拿鐵",
+        "EngName": "Latte",
+        "Price": 120,
+        "Photo": "/images/menu/espresso001.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "茶",
+    "products": [
+      {
+        "Id": "tea001",
+        "Name": "阿里山高山茶",
+        "EngName": "Alishan High Mountain Tea",
+        "Price": 100,
+        "Photo": "/images/menu/tea001.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "無咖啡因飲品",
+    "products": [
+      {
+        "Id": "nocaffeine001",
+        "Name": "新鮮水果茶",
+        "EngName": "Fresh Fruit Tea",
+        "Price": 130,
+        "Photo": "/images/menu/ocaffeine001.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "甜點",
+    "products": [
+      {
+        "Id": "dessert001",
+        "Name": "法式檸檬塔",
+        "EngName": "French Lemon Tart",
+        "Price": 90,
+        "Photo": "/images/menu/dessert001.jpg"
+      }
+    ]
+  },
+  {
+    "categoryName": "炸物",
+    "products": [
+      {
+        "Id": "fried001",
+        "Name": "美式脆薯",
+        "EngName": "Crispy French Fries",
+        "Price": 80,
+        "Photo": "/images/menu/fried001.jpg"
+      }
+    ]
+  }
+]

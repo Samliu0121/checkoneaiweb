@@ -41,3 +41,9 @@ const navItems = [
   { title: t('page.admin.nav.logout'), icon: 'mdi-logout', to: '/' },
 ];
 </script>
+
+<style scoped lang="scss">
+.v-list-item-title {
+  font-size: 1.1em !important;
+}
+</style>

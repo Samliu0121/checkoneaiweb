@@ -20,17 +20,8 @@ declare module 'vue-router/auto-routes' {
   export interface RouteNamedMap {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
     '/admin/': RouteRecordInfo<'/admin/', '/admin', Record<never, never>, Record<never, never>>,
-    '/admin/dashboard/': RouteRecordInfo<'/admin/dashboard/', '/admin/dashboard', Record<never, never>, Record<never, never>>,
-    '/admin/menu/': RouteRecordInfo<'/admin/menu/', '/admin/menu', Record<never, never>, Record<never, never>>,
-    '/admin/orders/': RouteRecordInfo<'/admin/orders/', '/admin/orders', Record<never, never>, Record<never, never>>,
-    '/admin/promotions/': RouteRecordInfo<'/admin/promotions/', '/admin/promotions', Record<never, never>, Record<never, never>>,
-    '/admin/revenue/': RouteRecordInfo<'/admin/revenue/', '/admin/revenue', Record<never, never>, Record<never, never>>,
-    '/admin/settings/': RouteRecordInfo<'/admin/settings/', '/admin/settings', Record<never, never>, Record<never, never>>,
-    '/admin/tables/': RouteRecordInfo<'/admin/tables/', '/admin/tables', Record<never, never>, Record<never, never>>,
-    '/AdminDashboard': RouteRecordInfo<'/AdminDashboard', '/AdminDashboard', Record<never, never>, Record<never, never>>,
+    '/admin/products/': RouteRecordInfo<'/admin/products/', '/admin/products', Record<never, never>, Record<never, never>>,
+    '/dashboard/': RouteRecordInfo<'/dashboard/', '/dashboard', Record<never, never>, Record<never, never>>,
     '/order/': RouteRecordInfo<'/order/', '/order', Record<never, never>, Record<never, never>>,
-    '/page1': RouteRecordInfo<'/page1', '/page1', Record<never, never>, Record<never, never>>,
-    '/page2': RouteRecordInfo<'/page2', '/page2', Record<never, never>, Record<never, never>>,
-    '/reservation/': RouteRecordInfo<'/reservation/', '/reservation', Record<never, never>, Record<never, never>>,
   }
 }
