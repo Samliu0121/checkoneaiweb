@@ -44,6 +44,11 @@
   **原因**: 實現了「每日結算」功能，包括點擊按鈕彈出對話框顯示當日總營業額，並遵循 i18n 規範進行文字國際化。
   **影響檔案**: `src/pages/admin/index.vue`, `src/utils/i18n/locales/zh-TW.json`
   **驗證**: 終端機驗證成功。
+- [2024-07-31 14:00 (UTC+8)]
+  **動作**：重構 `index.vue`，將版面程式碼移至 `src/layouts/AdminLayout.vue`。
+  **原因**：修正因版面與頁面職責混淆導致的重複導覽列問題。此頁面現在只負責顯示儀表板的內容，版面結構由 `AdminLayout.vue` 控制。
+  **影響檔案**：`src/pages/admin/index.vue`, `src/layouts/AdminLayout.vue`
+  **驗證**：重新部署後，後台介面應恢復正常。
 
 ## ⑤ 待辦
 - 無。
