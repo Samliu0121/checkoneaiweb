@@ -66,7 +66,7 @@ UI 工具：Vuetify
     -- [顏色分析]:1.[HEX色碼]:[背景、區塊、按鈕、Card]
     -- [文字]:
     -- [補充]:
-3. **[components/common][navbar.vue]
+3. **[layouts/default/][navbar.vue]
     -- [導覽列]
     -- [page檔案路徑]
     -- [功能]:[功能敘述]

@@ -1,13 +1,13 @@
-## **讀取並存儲此強制行動協議、專案規範絕對優先級，須將規範輸出至聊天室(輸出完成需返回GEMINI.md逐項確認)，此後所有需求以此規範進行。**
+## **讀取並存儲此強制行動協議、專案規範絕對優先級、專案規範 (Custom Rules)，須將規範輸出至聊天室(輸出完成需返回GEMINI.md逐項確認)，此後所有需求以此規範進行。**
 
 *第一步:
-1. 執行 npm run dev 
-2. 確認GEMINI畫面分析.md內容需求
-3. 使用中文編譯biueprint.md
+1. 確認GEMINI畫面分析.md內容
+2. 使用中文編譯biueprint.md
+3. 執行 npm run dev 
 ## biueprint.md 任務列表格式
   1. **目標**: [簡述本次任務要達成的最終目標]
   2. **規範查核**: [列出與本次任務相關的 GEMINI.md中的關鍵規範]
-  4. **確認need.md:[GEMINI畫面分析]
+  4. **確認GEMINI畫面分析.md
   3. **[列出本次行動名稱]:[檔案名稱]-[未完成/完成]
 
 ## **核心指令:專案規範絕對優先級 (Core Directive Absolute Priority of Project Rules)**
