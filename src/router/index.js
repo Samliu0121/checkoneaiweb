@@ -26,10 +26,10 @@ const routes = [
         name: 'Admin',
         component: () => import('@/pages/admin/index.vue'),
       },
+      // Redirect for the old dashboard path
       {
         path: 'dashboard',
-        name: 'Dashboard',
-        component: () => import('@/pages/dashboard/index.vue'),
+        redirect: '/admin'
       },
       {
         path: 'products',

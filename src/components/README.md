@@ -1,28 +1,25 @@
----
 ## ① 目的
-- 本資料夾存放可重複使用的 Vue 元件。
+- 本資料夾負責存放專案中的共用 Vue 元件。
 
 ## ② 結構與命名規範
-- **檔案/元件命名**：Vue 元件必須為多字名稱，例如 `UserCard.vue`。
-- **輸出/匯入約定**：使用 `@` 別名指向 `src/`。
-- **不得事項**：無。
+- 元件檔案命名：使用 PascalCase，且必須為多字名稱 (e.g., `MenuItemCard.vue`)。
+- `common/`: 存放與業務邏輯無關的基礎元件。
 
 ## ③ 依賴與界面
-- **相依套件/Plugin**：`vuetify`, `pinia`。
+- 無
 
-## ④ 變更紀錄
-- [2024-07-29 17:10 (UTC+8)]
-  **動作**：刪除 `MenuItem.vue`（解決命名衝突）
-  **原因**：`unplugin-vue-components` 警告存在重複的元件名稱。此元件已移至 `src/components/order/OrderItem.vue`。
-  **影響檔案**：`src/components/MenuItem.vue`
-  **驗證**：終端機驗證成功。
+## ④ 變更紀錄（由 Gemini 追加；一改一記）
+- [2024-07-29 14:50 (UTC+8)]
+  **動作**：新增 `ShoppingCart.vue`（購物車）  
+  **原因**：根據 `blueprint.md` 的規劃，建立一個元件來顯示購物車內容、總金額及結帳按鈕，並與 `useCartStore` 連動。
+  **影響檔案**：`src/components/ShoppingCart.vue`  
+  **驗證**：終端機驗證成功
 
-- [2024-07-29 17:10 (UTC+8)]
-  **動作**：刪除 `ShoppingCart.vue`（解決命名衝突）
-  **原因**：`unplugin-vue-components` 警告存在重複的元件名稱。此元件已移至 `src/components/order/OrderShoppingCart.vue`。
-  **影響檔案**：`src/components/ShoppingCart.vue`
-  **驗證**：終端機驗證成功。
+- [2024-07-29 14:45 (UTC+8)]
+  **動作**：新增 `MenuItemCard.vue`（菜單項目卡片）  
+  **原因**：根據 `blueprint.md` 的規劃，建立一個獨立的元件來展示單一菜單項目，包含其圖片、名稱、價格與加入購物車的功能。  
+  **影響檔案**：`src/components/MenuItemCard.vue`  
+  **驗證**：終端機驗證成功
 
-## ⑤ 待辦
-- 無。
----
+## ⑤ 待辦（選填）
+- 無

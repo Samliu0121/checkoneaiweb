@@ -21,6 +21,16 @@
   **原因**: 將根路徑 `/` 的重定向從 `/dashboard` 改為 `/order`，以統一路由行為並解決 `No match found` 警告。
   **影響檔案**: `src/router/index.js`
   **驗證**: 終端機驗證成功。
+- [2024-07-31 11:30 (UTC+8)]
+  **動作**: 修改 `index.js`
+  **原因**: 移除了對已刪除檔案 `@/pages/dashboard/index.vue` 的無效路由，解決了 Vite 編譯時的 `import-analysis` 錯誤。
+  **影響檔案**: `src/router/index.js`
+  **驗證**: 終端機驗證成功。
+- [2024-07-31 11:45 (UTC+8)]
+  **動作**: 修改 `index.js`
+  **原因**: 新增路由重新導向，將舊的 `/admin/dashboard` 路徑指向 `/admin`，以解決 `No match found` 警告並確保舊連結的相容性。
+  **影響檔案**: `src/router/index.js`
+  **驗證**: 終端機驗證成功。
 
 ## ④ 待辦
 - 無。

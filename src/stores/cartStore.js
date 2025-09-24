@@ -1,45 +1,48 @@
 import { defineStore } from 'pinia';
-import { ref, computed } from 'vue';
 
-export const useCartStore = defineStore('cart', () => {
-  const items = ref([]);
+export const useCartStore = defineStore('cart', {
+  state: () => ({
+    items: [],
+  }),
 
-  const addToCart = (item) => {
-    const existingItem = items.value.find((i) => i.Id === item.Id);
-    if (existingItem) {
-      existingItem.quantity++;
-    } else {
-      items.value.push({ ...item, quantity: 1 });
-    }
-  };
+  getters: {
+    totalItems() {
+      return this.items.reduce((total, item) => total + item.quantity, 0);
+    },
+    totalPrice() {
+      return this.items.reduce((total, item) => total + item.price * item.quantity, 0);
+    },
+  },
 
-  const removeFromCart = (itemToRemove) => {
-    const index = items.value.findIndex(item => item.Id === itemToRemove.Id);
-    if (index !== -1) {
-      items.value.splice(index, 1);
-    }
-  };
+  actions: {
+    addToCart(product) {
+      const existingItem = this.items.find(item => item.id === product.id);
 
-  const decreaseQuantity = (item) => {
-    const existingItem = items.value.find((i) => i.Id === item.Id);
-    if (existingItem && existingItem.quantity > 1) {
-      existingItem.quantity--;
-    } else {
-      removeFromCart(item);
-    }
-  };
+      if (existingItem) {
+        existingItem.quantity++;
+      } else {
+        this.items.push({ ...product, quantity: 1 });
+      }
+    },
 
-  const clearCart = () => {
-    items.value = [];
-  };
+    removeFromCart(productId) {
+      const index = this.items.findIndex(item => item.id === productId);
 
-  const total = computed(() => {
-    return items.value.reduce((acc, item) => acc + item.Price * item.quantity, 0);
-  });
+      if (index !== -1) {
+        this.items.splice(index, 1);
+      }
+    },
 
-  const totalItems = computed(() => {
-    return items.value.reduce((acc, item) => acc + item.quantity, 0);
-  });
+    updateQuantity(productId, quantity) {
+      const item = this.items.find(item => item.id === productId);
 
-  return { items, addToCart, removeFromCart, decreaseQuantity, clearCart, total, totalItems };
+      if (item) {
+        item.quantity = quantity;
+      }
+    },
+
+    clearCart() {
+      this.items = [];
+    },
+  },
 });

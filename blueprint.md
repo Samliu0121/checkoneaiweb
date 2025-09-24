@@ -1,14 +1,14 @@
+# biueprint.md
 
-  1. **目標**: 建立一個咖啡廳點餐系統的前端介面。
-  2. **規範查核**:
-    *   **GEMINI.md: 核心指令:專案規範絕對優先級**: 確保所有操作都符合 `GEMINI.md` 的規範。
-    *   **GEMINI.md: 核心指令: 強制行動協議**: 遵循任務簽入與簽出的流程。
-    *   **GEMINI.md: biueprint.md 任務列表格式**: `blueprint.md` 的格式必須符合規定。
-    *   **need.md: [GEMINI畫面分析]**: `blueprint.md` 的內容需基於 `need.md` 的分析結果。
-  3. **確認need.md:[GEMINI畫面分析]**
-  4. **[編輯SCSS]:_variables.scss-[未完成]
-  5. **[page][首頁]:index.vue-[未完成]
-  6. **[components][業務元件]:MenuItemCard.vue-[未完成]
-  7. **[components][業務元件]:ShoppingCart.vue-[未完成]
-  8. **[stores]:cartStore.js-[未完成]
-  9. **[utils/i18n/locales]:zh-TW.json-[未完成]
+## 任務列表格式
+  1. **目標**: 將建置好的前端應用程式部署到 Firebase Hosting。
+  2. **規範查核**: 
+      - `GEMINI.md`: 專案規範絕對優先級。
+      - `GEMINI.md`: 強制行動協議 (MANDATORY ACTION PROTOCOL)。
+  3. **確認need.md:[GEMINI畫面分析]**:
+      - 使用者已確認 `npm run build` 成功完成，並產生了 `dist` 目錄。
+  4. **行動列表**:
+      - [Firebase初始化]: firebase.json - 完成
+      - [Firebase部署設定]: firebase.json - 完成
+      - [Firebase部署]: Firebase Hosting - 完成
+      - [文件紀錄]: README.md - 完成

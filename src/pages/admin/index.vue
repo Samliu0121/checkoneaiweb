@@ -1,10 +1,16 @@
-'''
+
 <template>
   <div>
     <v-app-bar app color="white" flat>
-      <v-toolbar-title class="font-weight-bold text-h5">{{ t('page.admin.title') }}</v-toolbar-title>
       <v-spacer></v-spacer>
+      <v-btn variant="outlined" size="large" prepend-icon="mdi-silverware-fork-knife" to="/order" class="action-btn-header mr-2">
+        {{ t('page.admin.header.goToPOS') }}
+      </v-btn>
+      <v-btn variant="outlined" size="large" prepend-icon="mdi-poll" class="action-btn-header mr-4" @click="isSettlementDialogVisible = true">
+        {{ t('page.admin.header.dailySettlement') }}
+      </v-btn>
       <v-btn prepend-icon="mdi-calendar-check" color="orange-lighten-2">{{ t('page.admin.header.reservations') }}</v-btn>
+      <v-btn icon="mdi-logout" color="pink-lighten-4" class="ml-4"></v-btn>
     </v-app-bar>
 
     <v-navigation-drawer app permanent>
@@ -12,11 +18,6 @@
       <v-list nav>
         <v-list-item v-for="item in navItems" :key="item.title" :prepend-icon="item.icon" :title="t(item.title)" :to="item.to" :active="item.to === '/admin'" color="orange-lighten-2"></v-list-item>
       </v-list>
-      <template v-slot:append>
-        <div class="pa-2">
-          <v-btn block color="pink-lighten-4" prepend-icon="mdi-logout">{{ t('page.admin.nav.logout') }}</v-btn>
-        </div>
-      </template>
     </v-navigation-drawer>
 
     <v-main>
@@ -32,7 +33,7 @@
               <v-row>
                 <v-col cols="12">
                    <h1 class="text-h2 font-weight-bold text-white text-center mb-10 headline-text">
-                    即時訂單總覽
+                    {{ t('page.admin.dashboard.title') }}
                   </h1>
                 </v-col>
               </v-row>
@@ -41,7 +42,7 @@
                 <v-col cols="12" md="3">
                   <v-card class="stat-card">
                     <v-card-item class="pb-1">
-                      <v-card-title>已結帳總額</v-card-title>
+                      <v-card-title>{{ t('page.admin.summary.settled') }}</v-card-title>
                       <template v-slot:append>
                         <v-icon color="success">mdi-currency-usd</v-icon>
                       </template>
@@ -56,7 +57,7 @@
                 <v-col cols="12" md="3">
                   <v-card class="stat-card">
                     <v-card-item class="pb-1">
-                      <v-card-title>未結帳金額</v-card-title>
+                      <v-card-title>{{ t('page.admin.summary.unsettled') }}</v-card-title>
                       <template v-slot:append>
                         <v-icon color="warning">mdi-clipboard-text-outline</v-icon>
                       </template>
@@ -71,7 +72,7 @@
                 <v-col cols="12" md="3">
                   <v-card class="stat-card">
                     <v-card-item class="pb-1">
-                      <v-card-title>總訂單數</v-card-title>
+                      <v-card-title>{{ t('page.admin.summary.totalOrders') }}</v-card-title>
                       <template v-slot:append>
                         <v-icon color="info">mdi-file-document-outline</v-icon>
                       </template>
@@ -82,23 +83,26 @@
                   </v-card>
                 </v-col>
               </v-row>
-               <v-row justify="center" class="mt-10">
-                  <v-col cols="auto">
-                     <v-btn variant="outlined" size="x-large" prepend-icon="mdi-silverware-fork-knife" to="/order" class="action-btn">
-                        前往點餐
-                      </v-btn>
-                  </v-col>
-                   <v-col cols="auto">
-                      <v-btn variant="outlined" size="x-large" prepend-icon="mdi-poll" class="action-btn">
-                        每日結算
-                      </v-btn>
-                  </v-col>
-              </v-row>
             </v-col>
           </v-row>
         </v-container>
       </v-img>
     </v-main>
+    
+    <!-- Daily Settlement Dialog -->
+    <v-dialog v-model="isSettlementDialogVisible" max-width="500">
+      <v-card>
+        <v-card-title class="text-h5">{{ t('page.admin.settlementDialog.title') }}</v-card-title>
+        <v-card-text>
+          {{ t('page.admin.settlementDialog.totalRevenue', { amount: settledRevenue }) }}
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="green darken-1" text @click="isSettlementDialogVisible = false">{{ t('page.admin.settlementDialog.confirm') }}</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
   </div>
 </template>
 
@@ -109,6 +113,8 @@ import { useOrderStore } from '@/stores/order';
 
 const { t } = useI18n();
 const orderStore = useOrderStore();
+
+const isSettlementDialogVisible = ref(false);
 
 const navItems = ref([
   { title: 'page.admin.nav.orders', icon: 'mdi-bell', to: '/admin' },
@@ -150,10 +156,9 @@ const unsettledAmount = computed(() => 0); // Placeholder
   backdrop-filter: blur(5px);
 }
 
-.action-btn {
-  color: white;
-  border-color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+.action-btn-header {
+  color: #424242;
+  border-color: #E0E0E0;
 }
 
 .text-h4 {
@@ -161,4 +166,3 @@ const unsettledAmount = computed(() => 0); // Placeholder
   line-height: 2.5rem;
 }
 </style>
-'''
