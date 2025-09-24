@@ -2,15 +2,53 @@
   "page": {
     "index": {
       "title": "咖啡廳點餐系統"
+    },
+    "admin": {
+      "title": "向天泓咖啡廳",
+      "nav": {
+        "dashboard": "店家儀表板",
+        "orders": "即時訂單",
+        "menu": "菜單管理",
+        "tables": "桌號管理",
+        "revenue": "營收分析",
+        "promotions": "優惠活動",
+        "settings": "系統設定",
+        "logout": "登出"
+      },
+      "header": {
+        "reservations": "訂位總覽"
+      },
+      "dashboard": {
+        "title": "即時訂單總覽",
+        "goToPOS": "前往點餐",
+        "dailyReport": "每日結算"
+      },
+      "summary": {
+        "settled": "已結帳總額",
+        "unsettled": "未結帳金額",
+        "totalOrders": "總訂單數"
+      }
     }
   },
   "btn": {
     "addToCart": "加入購物車",
-    "checkout": "結帳"
+    "checkout": "結帳",
+    "order": "點餐",
+    "admin": "後台管理",
+    "reservation": "訂位",
+    "submitReservation": "確認訂位"
   },
   "shoppingCart": {
     "title": "購物車",
     "empty": "你的購物車是空的。",
     "total": "總計"
+  },
+  "reservation": {
+    "title": "線上訂位",
+    "name": "姓名",
+    "phone": "電話",
+    "guests": "人數",
+    "date": "日期",
+    "time": "時間"
   }
 }

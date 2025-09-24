@@ -13,7 +13,10 @@ import { fileURLToPath, URL } from 'node:url'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    VueRouter(),
+    VueRouter({
+      routesFolder: 'src/pages',
+      dts: 'src/typed-router.d.ts',
+    }),
     Layouts(),
     Vue({
       template: { transformAssetUrls }
@@ -25,7 +28,10 @@ export default defineConfig({
         configFile: 'src/styles/settings.scss',
       },
     }),
-    Components(),
+    Components({
+      dirs: ['src/components'],
+      dts: 'src/components.d.ts',
+    }),
     Fonts({
       google: {
         families: [{
