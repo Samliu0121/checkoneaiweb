@@ -1,20 +1,33 @@
+---
 ## ① 目的
-- 本資料夾負責存放全域 SCSS 樣式檔案。
+- 本資料夾負責的角色 / 使用場景：存放專案所有全域的 SCSS 樣式檔案，包括顏色變數、全域樣式設定、以及特定頁面的樣式覆蓋。
 
 ## ② 結構與命名規範
-- `_variables.scss`: 定義全域 SCSS 變數，如主題色、字體大小等。
-- `page.scss`: 引入各頁面的獨立樣式。
-- `style.scss`: 整合所有 SCSS 檔案的總入口點。
+- **檔案/元件命名**：
+  - `_variables.scss`: 存放全域顏色、字型、間距等 SCSS 變數。
+  - `style.scss`: 主要的全域樣式入口點，負責引入其他 SCSS 檔案。
+  - `page.scss`: 存放針對特定頁面的樣式調整或覆蓋。
+- **輸出/匯入約定**：
+  - 變數檔 (`_variables.scss`) 應在 `vite.config.js` 中設定為全域載入，或在需要使用的 Vue 元件中手動引入。
+  - `style.scss` 應在 `src/main.js` 中被引入，以應用全域樣式。
+- **不得事項**：
+  - 不得在變數檔 (`_variables.scss`) 以外的檔案中硬編碼 (Hard Code) 顏色色碼。
+  - 避免在此處撰寫元件級別的 scoped 樣式。
 
 ## ③ 依賴與界面
-- 無
+- **相依套件/Plugin**：`sass`
+- **對外介面**：導出 SCSS 變數供 Vuetify 主題設定和其他元件使用。
 
 ## ④ 變更紀錄（由 Gemini 追加；一改一記）
-- [2024-07-29 14:30 (UTC+8)]
-  **動作**：新增/修改 `_variables.scss`（設定專案主題色）  
-  **原因**：根據 `blueprint.md` 的畫面分析，設定 `$primary`、`$secondary`、`$background` 等顏色，以統一全站視覺風格。  
-  **影響檔案**：`src/styles/scss/_variables.scss`  
-  **驗證**：終端機驗證成功
+> **每次「行動簽出」後，必須在此新增一條紀錄。**
+
+- [2024-07-26 10:40 (UTC+8)]
+  **動作**：驗證 `_variables.scss`（設定專案主色調）
+  **原因**：根據 `need.md` 中的畫面分析，確認 `$primary`, `$secondary`, `$background` 等主色調變數已正確設定。
+  **影響檔案**：`src/styles/scss/_variables.scss`
+  **驗證**：經查閱，檔案內容已符合規格，無需修改。
 
 ## ⑤ 待辦（選填）
 - 無
+
+---

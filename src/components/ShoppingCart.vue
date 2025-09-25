@@ -1,28 +1,39 @@
 <template>
-  <v-card>
-    <v-card-title>{{ t('shoppingCart.title') }}</v-card-title>
-    <v-divider></v-divider>
-    <v-list v-if="cartStore.items.length > 0">
-      <v-list-item v-for="item in cartStore.items" :key="item.id">
-        <v-list-item-title>{{ item.name }}</v-list-item-title>
-        <v-list-item-subtitle>{{ item.quantity }} x ${{ item.price }}</v-list-item-subtitle>
+  <v-card class="pa-4">
+    <v-card-title class="text-h5">
+      {{ t('shoppingCart.title') }}
+    </v-card-title>
+    <v-divider class="my-2"></v-divider>
+    <v-list v-if="cartStore.totalItems > 0">
+      <v-list-item
+        v-for="item in cartStore.items"
+        :key="item.id"
+        :title="item.name"
+        :subtitle="`x ${item.quantity}`"
+      >
         <template v-slot:append>
-          <v-btn icon="mdi-close" size="small" variant="text" @click="cartStore.removeFromCart(item.id)"></v-btn>
+          <span>NT$ {{ item.price * item.quantity }}</span>
         </template>
       </v-list-item>
     </v-list>
-    <v-card-text v-else>
+    <div v-else class="text-center pa-4">
       {{ t('shoppingCart.empty') }}
-    </v-card-text>
-    <v-divider></v-divider>
-    <v-card-actions class="pa-4">
-      <v-row>
-        <v-col cols="6" class="text-h6">{{ t('shoppingCart.total') }}:</v-col>
-        <v-col cols="6" class="text-h6 text-right">${{ cartStore.totalPrice }}</v-col>
-        <v-col cols="12">
-          <v-btn color="primary" block :disabled="cartStore.items.length === 0">{{ t('btn.checkout') }}</v-btn>
-        </v-col>
-      </v-row>
+    </div>
+    <v-divider class="my-2"></v-divider>
+    <div class="d-flex justify-space-between align-center pa-2">
+      <span class="text-h6">{{ t('shoppingCart.total') }}</span>
+      <span class="text-h6">NT$ {{ cartStore.totalPrice }}</span>
+    </div>
+    <v-card-actions>
+      <v-btn 
+        :disabled="cartStore.totalItems === 0"
+        color="primary"
+        variant="elevated"
+        block
+        @click="handleCheckout"
+      >
+        {{ t('btn.checkout') }}
+      </v-btn>
     </v-card-actions>
   </v-card>
 </template>
@@ -33,8 +44,14 @@ import { useCartStore } from '@/stores/cartStore';
 
 const { t } = useI18n();
 const cartStore = useCartStore();
+
+function handleCheckout() {
+  // 實際結帳邏輯待處理
+  console.log('Proceeding to checkout with:', cartStore.items);
+  alert(`結帳總金額：NT$ ${cartStore.totalPrice}`);
+}
 </script>
 
 <style scoped>
-/* Your component-specific styles here */
+/* 可在此處添加特定於此元件的樣式 */
 </style>
