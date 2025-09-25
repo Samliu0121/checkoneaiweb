@@ -3,14 +3,13 @@
   <v-app>
     <v-app-bar app color="white" flat>
       <v-spacer></v-spacer>
-      <v-btn variant="outlined" size="large" prepend-icon="mdi-silverware-fork-knife" to="/order" class="action-btn-header mr-2">
-        {{ t('page.admin.header.goToPOS') }}
-      </v-btn>
       <v-btn variant="outlined" size="large" prepend-icon="mdi-poll" class="action-btn-header mr-4" @click="isSettlementDialogVisible = true">
         {{ t('page.admin.header.dailySettlement') }}
       </v-btn>
       <v-btn prepend-icon="mdi-calendar-check" color="orange-lighten-2">{{ t('page.admin.header.reservations') }}</v-btn>
-      <v-btn icon="mdi-logout" color="pink-lighten-4" class="ml-4"></v-btn>
+      <v-btn to="/" color="light-blue" variant="tonal" prepend-icon="mdi-silverware-fork-knife" class="ml-4">
+        {{ t('page.admin.header.goToPOS') }}
+      </v-btn>
     </v-app-bar>
 
     <v-navigation-drawer app permanent>
