@@ -1,0 +1,92 @@
+
+[
+  {
+    "category": "特色風味小火鍋",
+    "items": [
+      {
+        "id": 1,
+        "name": "蕃茄牛奶鍋(雞肉)",
+        "description": "特色風味小火鍋",
+        "price": 400,
+        "image": "/images/menu/hotpot-1.png"
+      },
+      {
+        "id": 2,
+        "name": "泰式酸辣鍋(雞肉)",
+        "description": "特色風味小火鍋",
+        "price": 380,
+        "image": "/images/menu/hotpot-2.png"
+      },
+      {
+        "id": 3,
+        "name": "賽夏馬告鍋(雞肉)",
+        "description": "特色風味小火鍋",
+        "price": 380,
+        "image": "/images/menu/hotpot-3.png"
+      },
+      {
+        "id": 4,
+        "name": "賽夏馬告鍋(素)",
+        "description": "特色風味小火鍋",
+        "price": 320,
+        "image": "/images/menu/hotpot-4.png"
+      },
+      {
+        "id": 5,
+        "name": "羊奶樹根鍋(雞肉)",
+        "description": "特色風味小火鍋",
+        "price": 380,
+        "image": "/images/menu/hotpot-5.png"
+      },
+      {
+        "id": 6,
+        "name": "羊奶樹根鍋(素)",
+        "description": "特色風味小火鍋",
+        "price": 320,
+        "image": "/images/menu/hotpot-6.png"
+      },
+      {
+        "id": 7,
+        "name": "十全養生鍋(雞肉)",
+        "description": "特色風味小火鍋",
+        "price": 380,
+        "image": "/images/menu/hotpot-7.png"
+      },
+      {
+        "id": 8,
+        "name": "十全養生鍋(素)",
+        "description": "特色風味小火鍋",
+        "price": 320,
+        "image": "/images/menu/hotpot-8.png"
+      }
+    ]
+  },
+  {
+    "category": "特色風味簡餐",
+    "items": []
+  },
+  {
+    "category": "單品咖啡",
+    "items": []
+  },
+  {
+    "category": "義式咖啡",
+    "items": []
+  },
+  {
+    "category": "茶",
+    "items": []
+  },
+  {
+    "category": "無咖啡因飲品",
+    "items": []
+  },
+  {
+    "category": "甜點",
+    "items": []
+  },
+  {
+    "category": "炸物",
+    "items": []
+  }
+]
