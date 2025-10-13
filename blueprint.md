@@ -1,7 +1,17 @@
-1. **目標**: 根據提供的「向天泓咖啡廳」點餐畫面，產出符合 `need.md` 規範的 `GEMINI畫面分析.md` 檔案，完成頁面結構、元件、主題、互動、資源與實作計畫的完整分析。
-2. **規範查核**: 
-    -   **`GEMINI.md`**: 必須遵循「任務簽入/行動簽出」流程；所有命名、路徑、UI/RWD、i18n 規範都必須遵守。
-    -   **`need.md`**: 產出檔案必須嚴格符合第 10 節的 `GEMINI畫面分析.md` 模板；元件拆解、API 定義、RWD 配置等分析維度需完整。
-3. **[分析]:[GEMINI畫面分析.md]-[完成]
-4. **[任務列表]:[blueprint.md]-[完成]
-5. **[元件README]:[src/components/README.md]-[待辦]
+# 藍圖
+
+## 專案概述
+
+這是一個使用 Composition API、JavaScript 和 Vite 的 Vue.js 專案。旨在打造一個現代化、高效能且易於維護的 Web 應用程式。
+
+## 已實作功能
+
+* **Vue.js 框架:** 專案基於 Vue.js 框架建構。
+* **Vite 工具:** 使用 Vite 進行開發與建置。
+* **Composition API:** 使用 Composition API (`<script setup>`) 編寫程式碼。
+* **JavaScript:** 使用 JavaScript 確保型別安全。
+* **Vuetify:** 使用 Vuetify 作為 UI 函式庫。
+
+## 當前狀態
+
+目前為初版。等待下一步開發指示。
